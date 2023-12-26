@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdatePass">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="109dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/updatepass_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_update_pass"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:paddingVertical="20dp"
+                android:textColor="@color/white"
+                android:background="@color/purple"
+                android:layout_marginBottom="40dp"
+                />
+
+            <EditText
+                android:id="@+id/oldpass"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="@string/oldpass"
+                android:importantForAutofill="no"
+                android:inputType="numberPassword|textPassword"
+
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/newpass"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="@string/newpass"
+                android:importantForAutofill="no"
+                android:inputType="numberPassword|textPassword"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/cnpass"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginBottom="104dp"
+                android:ems="10"
+                android:hint="@string/cpass"
+                android:importantForAutofill="no"
+                android:inputType="numberPassword|textPassword"
+
+                android:paddingLeft="10dp" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="80dp"
+                android:layout_marginBottom="220dp"
+                android:text="@string/update"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
